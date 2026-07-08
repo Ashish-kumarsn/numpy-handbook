@@ -1,0 +1,39 @@
+INDEXING AND SLICING 
+
+
+
+INDEXING 
+
+it is necessary for accesing the element of the array we have created .
+
+import numpy as np
+arr = np.array([10,20,30,40,50])
+print(arr[0]) -> 10
+arr[2]=100 -> modify the value of 3rd element to 100
+
+
+    Negative indexing 
+
+    -5 -4 -3 -2 -1
+
+    ↓
+
+    10 20 30 40 50
+
+    arr[-1] -> 50 , usefull when length of array is not known
+
+
+
+
+SLICING 
+
+Used to grab the specific chunk of array without copying the whole elements.
+Syntex -> [start:stop:steps] 
+
+(view example code -> Slicing.py )
+
+also , start -> included while stop -> excluded
+
+
+
+

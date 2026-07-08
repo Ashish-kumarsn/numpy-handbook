@@ -1,0 +1,122 @@
+What is NumPy?
+
+NumPy (Numerical Python) is a high-performance Python library used for numerical computing.
+
+It provides a special data structure called ndarray (N-dimensional Array) 
+which stores homogeneous data efficiently in contiguous memory.
+
+Almost every AI, Machine Learning and Data Science library depends on NumPy.
+
+Examples:
+
+Pandas
+OpenCV
+Scikit-learn
+TensorFlow
+PyTorch
+Why was NumPy created?
+
+Python lists are designed for flexibility, not for high-performance numerical computation.
+
+Scientists and engineers needed a library that could efficiently process millions of numbers.
+
+Hence NumPy was created.
+
+Problems with Python Lists
+
+Python list stores references (pointers) to Python objects.
+
+Conceptually
+
+List
+ │
+ ├── Pointer ──► PyObject(10)
+ ├── Pointer ──► PyObject(20)
+ ├── Pointer ──► PyObject(30)
+
+Each integer is actually a Python object containing
+
+Value
+Type Information
+Reference Count
+Metadata
+
+Advantages
+
+Can store different data types
+[10, "Ashish", True, [1,2]]
+
+Disadvantages
+
+More memory
+Pointer chasing
+Cache misses
+Slower numerical computation
+NumPy Solution
+
+NumPy introduces
+
+ndarray
+
+where data is stored contiguously.
+
+Conceptually
+
+10 | 20 | 30 | 40 | 50
+
+Advantages
+
+Contiguous memory
+Better cache utilization
+Less memory
+Fast mathematical operations
+Easy vectorization
+
+
+Why is NumPy Faster?
+
+Main reasons
+
+1. Contiguous Memory
+
+Elements are stored together.
+
+CPU cache becomes highly efficient.
+
+2. Homogeneous Data
+
+All elements have the same datatype.
+
+Example
+
+[10,20,30]
+
+All integers.
+
+Memory size becomes predictable.
+
+3. Optimized C/C++ Implementation
+
+NumPy is mostly implemented in C.
+
+Python only calls highly optimized C functions.
+
+Therefore
+
+NumPy operations are much faster than Python loops.
+
+
+Why AI Uses NumPy
+
+Neural Networks perform
+
+Matrix Multiplication
+Vector Addition
+Dot Product
+Convolution
+
+Millions of operations.
+
+Using Python lists would be extremely slow.
+
+NumPy provides the mathematical foundation.

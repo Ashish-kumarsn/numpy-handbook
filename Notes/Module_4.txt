@@ -1,0 +1,14 @@
+
+
+##Mathematical Operations  
+
+# Element-wise Operations is in codes section 
+
+
+# Universal_functions are in codes
+
+# Aggregation_Functions are in code 
+
+
+# Axis_Operations is also in code 
+

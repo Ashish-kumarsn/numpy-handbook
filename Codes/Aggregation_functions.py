@@ -46,3 +46,7 @@ print(np.var(arr))
 # Logical aggregation
 print(np.any(arr))   # At least one True
 print(np.all(arr))   # All values True
+
+
+arr = np.array ([[3],[4],[5]])
+print(arr.shape)
